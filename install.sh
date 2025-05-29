@@ -63,6 +63,7 @@ else
 fi
 
 echo -e "${BLUE}[4/7] Activating virtual environment...${NC}"
+python3 -m venv venv
 source venv/bin/activate
 
 echo -e "${BLUE}[5/7] Upgrading pip...${NC}"
