@@ -39,6 +39,13 @@ if not exist "venv" (
 
 echo [4/8] Activating virtual environment...
 call venv\Scripts\activate.bat
+if not defined VIRTUAL_ENV (
+    echo ERROR: Failed to activate virtual environment!
+    echo Try running: venv\Scripts\activate.bat
+    pause
+    exit /b 1
+)
+echo Virtual environment activated: %VIRTUAL_ENV%
 
 echo [5/8] Upgrading pip...
 python -m pip install --upgrade pip
@@ -78,7 +85,8 @@ echo ================================================================
 echo.
 echo To run the system:
 echo   1. Activate virtual environment: venv\Scripts\activate.bat
-echo   2. Launch system: python launch.py
+echo   2. Launch system: python launch.py (full features)
+echo   3. Simple launcher: python simple_launch.py (basic features)
 echo.
 echo Quick start (with activated venv):
 echo   python launch.py

@@ -63,8 +63,14 @@ else
 fi
 
 echo -e "${BLUE}[4/7] Activating virtual environment...${NC}"
-python3 -m venv venv
 source venv/bin/activate
+
+if [ -z "$VIRTUAL_ENV" ]; then
+    echo -e "${RED}ERROR: Failed to activate virtual environment!${NC}"
+    echo "Try running: source venv/bin/activate"
+    exit 1
+fi
+echo -e "${GREEN}Virtual environment activated: $VIRTUAL_ENV${NC}"
 
 echo -e "${BLUE}[5/7] Upgrading pip...${NC}"
 python -m pip install --upgrade pip
@@ -99,7 +105,8 @@ echo -e "================================================================${NC}"
 echo
 echo -e "${BLUE}To run the system:${NC}"
 echo "  1. Activate virtual environment: source venv/bin/activate"
-echo "  2. Launch system: python launch.py"
+echo "  2. Launch system: python launch.py (full features)"
+echo "  3. Simple launcher: python simple_launch.py (basic features)"
 echo
 echo -e "${BLUE}Quick start (with activated venv):${NC}"
 echo "  python launch.py"

@@ -14,7 +14,7 @@ from sklearn.ensemble import VotingRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 import joblib
 
-from currency_prediction_app import CurrencyPredictionApp
+from analytics.currency_prediction_app import CurrencyPredictionApp
 from models.pytorch_models import PyTorchCurrencyModels
 
 warnings.filterwarnings('ignore')

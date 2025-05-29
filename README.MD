@@ -1,30 +1,53 @@
-INSTALLATION
-============
-Requirements:
-- Python 3.8+
-- Internet connection
-- 4GB RAM minimum
+## Installation
 
-Install dependencies:
-   Windows: install.bat
-   Linux/Mac: install.sh
+### Windows
+```bash
+install.bat
+```
 
-LAUNCH
-======
-Run main launcher:
+### Linux/Mac
+```bash
+./install.sh
+```
+
+## Running the System
+
+### Option 1: Full Launcher (Recommended)
+For all features and maximum functionality:
+```bash
+python launch.py
+```
+
+### Option 2: Simple Launcher
+For basic functionality and maximum compatibility:
+```bash
+python simple_launch.py
+```
+
+## Troubleshooting
+
+If you encounter any issues:
+
+1. **Check system status:**
+   ```bash
    python launch.py
+   # Select option 5 → 6: System Status
+   ```
 
-Select option from menu or use direct commands:
-   python src/launchers/quick_analysis.py [PAIR] [PERIOD]
+2. **Run system test:**
+   ```bash
+   python test_system.py
+   ```
 
-Examples:
-   python src/launchers/quick_analysis.py EURUSD 1y
-   python src/launchers/quick_analysis.py GBPUSD 6mo
+3. **Verify dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-DATA STORAGE
-============
-- data/ - Raw market data and processed datasets
-- models/ - Trained ML models (.pth, .joblib files)
-- plots/ - Generated charts and visualizations
-- reports/ - Analysis reports and logs
-- predictions/ - Price forecasts and predictions 
+## File Structure
+
+- `data/` - Raw and processed market data
+- `models/` - Trained ML models (.pth, .joblib files)
+- `plots/` - Generated charts and visualizations
+- `reports/` - Analysis reports and logs
+- `predictions/` - Price forecasts and predictions

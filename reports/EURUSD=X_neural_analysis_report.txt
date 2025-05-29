@@ -1,5 +1,5 @@
 NEURAL NETWORK ANALYSIS REPORT
-Generated: 2025-05-29 18:34:51
+Generated: 2025-05-29 19:34:59
 Currency Pair: EURUSD=X
 
 MODEL PERFORMANCE SUMMARY:
@@ -7,22 +7,22 @@ MODEL PERFORMANCE SUMMARY:
 
 Top 5 Models by RMSE:
 ----------------------------------------
-1. Traditional_Linear_Regression | RMSE: 0.003952 | R2:  0.9876
-4. Traditional_Random_Forest | RMSE: 0.007517 | R2:  0.9553
-7. Traditional_LightGBM      | RMSE: 0.007948 | R2:  0.9500
-2. Traditional_Ridge_Regression | RMSE: 0.007975 | R2:  0.9497
-6. Traditional_XGBoost       | RMSE: 0.008055 | R2:  0.9487
+1. Traditional_Linear_Regression | RMSE: 0.003960 | R2:  0.9876
+4. Traditional_Random_Forest | RMSE: 0.007531 | R2:  0.9552
+7. Traditional_LightGBM      | RMSE: 0.007963 | R2:  0.9499
+2. Traditional_Ridge_Regression | RMSE: 0.007987 | R2:  0.9496
+6. Traditional_XGBoost       | RMSE: 0.008070 | R2:  0.9485
 
 Best Overall Model: Traditional_Linear_Regression
-  - RMSE: 0.003952
+  - RMSE: 0.003960
   - R2: 0.9876
   - Type: Traditional
 
 CURRENT PREDICTION:
 --------------------
 Current Price: 1.133710
-Predicted Price: 1.131258
-Expected Change: -0.22%
+Predicted Price: 1.126628
+Expected Change: -0.62%
 Model Used: Dense_NN
 
 FILES GENERATED:

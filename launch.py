@@ -8,6 +8,9 @@ from datetime import datetime
 src_path = Path(__file__).parent / 'src'
 sys.path.insert(0, str(src_path))
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def fetch_fresh_data():
     print("INITIALIZING CURRENCY PREDICTION SYSTEM")
     print("=" * 50)
@@ -56,6 +59,7 @@ def show_main_menu():
     print("9. Exit")
 
 def quick_analysis():
+    clear_screen()
     print("\nQUICK ANALYSIS - EUR/USD, 2 YEARS")
     print("=" * 45)
     
@@ -78,6 +82,7 @@ def quick_analysis():
         traceback.print_exc()
 
 def command_line_interface():
+    clear_screen()
     print("\nCOMMAND LINE INTERFACE")
     print("=" * 30)
     print("Usage examples:")
@@ -87,6 +92,7 @@ def command_line_interface():
     print("\nFor help: python src/launchers/quick_analysis.py help")
 
 def interactive_menu():
+    clear_screen()
     print("\nLAUNCHING INTERACTIVE MENU...")
     
     try:
@@ -98,6 +104,7 @@ def interactive_menu():
         traceback.print_exc()
 
 def advanced_analytics():
+    clear_screen()
     print("\nADVANCED ANALYTICS")
     print("=" * 25)
     print("1. Fresh Analytics Generator")
@@ -161,6 +168,7 @@ def advanced_analytics():
         print("Invalid choice")
 
 def utilities_menu():
+    clear_screen()
     print("\nUTILITIES & TOOLS")
     print("=" * 20)
     print("1. Show Current Predictions")
@@ -273,7 +281,7 @@ def test_system_components():
             print(f"  Feature Engineering - ERROR: {e}")
         
         try:
-            from models.ml_models import MLModels
+            from models.ml_models import CurrencyPredictionModels
             print("  ML Models - OK")
         except Exception as e:
             print(f"  ML Models - ERROR: {e}")
@@ -302,10 +310,12 @@ def show_system_status():
         print(f"Chart Files: {len(plot_files)}")
 
 def view_predictions():
+    clear_screen()
     print("Opening prediction viewer...")
     open_charts()
 
 def open_charts():
+    clear_screen()
     print("\nOPENING CHARTS")
     print("=" * 20)
     
@@ -328,6 +338,7 @@ def open_charts():
             print("plots/ folder not found")
 
 def show_help():
+    clear_screen()
     print("\nHELP & DOCUMENTATION")
     print("=" * 30)
     print("1. Quick Start Guide")
@@ -362,6 +373,7 @@ def show_help():
         print("Supports traditional ML and neural network models")
 
 def main():
+    clear_screen()
     fetch_fresh_data()
     
     while True:
@@ -391,6 +403,7 @@ def main():
             print("Invalid choice. Please select 1-9.")
         
         input("\nPress Enter to continue...")
+        clear_screen()
 
 if __name__ == "__main__":
     main()
