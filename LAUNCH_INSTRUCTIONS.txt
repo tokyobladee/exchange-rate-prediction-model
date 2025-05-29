@@ -1,76 +1,34 @@
 CURRENCY PREDICTION SYSTEM - LAUNCH INSTRUCTIONS
 
-REQUIREMENTS
-============
-- Python 3.8 or higher
-- Internet connection for data fetching
-- Minimum 4GB RAM recommended
-
 INSTALLATION
 ============
-1. Install required dependencies:
+Requirements:
+- Python 3.8+
+- Internet connection
+- 4GB RAM minimum
+
+Install dependencies:
    pip install -r requirements.txt
 
-2. Verify installation:
-   python -c "import pandas, numpy, sklearn; print('Dependencies installed successfully')"
+Verify installation:
+   python -c "import pandas, numpy, sklearn, tensorflow, torch"
 
-QUICK START
-===========
-Execute the main launcher:
+LAUNCH
+======
+Run main launcher:
    python launch.py
 
-Select from available options:
-1. Quick Analysis - Fast EUR/USD prediction
-2. Custom Analysis - Choose currency pair and timeframe
-3. Interactive Mode - Guided analysis workflow
-4. Command Line - Direct parameter input
-5. Utilities - System management tools
-
-COMMAND LINE USAGE
-==================
-For direct execution without menu:
-   python src/launchers/quick_analysis.py [CURRENCY_PAIR] [PERIOD]
+Select option from menu or use direct commands:
+   python src/launchers/quick_analysis.py [PAIR] [PERIOD]
 
 Examples:
    python src/launchers/quick_analysis.py EURUSD 1y
    python src/launchers/quick_analysis.py GBPUSD 6mo
 
-SUPPORTED CURRENCY PAIRS
-=========================
-EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD, USDCAD, NZDUSD, EURGBP, EURJPY, GBPJPY
-
-SUPPORTED PERIODS
-=================
-1mo, 3mo, 6mo, 1y, 2y, 3y, 5y, max
-
-OUTPUT FILES
+DATA STORAGE
 ============
-- data/ - Raw and processed market data
-- models/ - Trained machine learning models
+- data/ - Raw market data and processed datasets
+- models/ - Trained ML models (.pth, .joblib files)
 - plots/ - Generated charts and visualizations
-- reports/ - Analysis reports and predictions
-- predictions/ - Future price forecasts
-
-SYSTEM FEATURES
-===============
-- Real-time data fetching from Yahoo Finance
-- Multiple machine learning algorithms
-- Neural network models (LSTM, GRU, Dense)
-- Technical indicator generation
-- Performance comparison and model selection
-- Professional visualization output
-- Automated report generation
-
-TROUBLESHOOTING
-===============
-If data fetching fails:
-- Check internet connection
-- Verify currency pair symbol format
-- Try shorter time periods
-
-If model training fails:
-- Ensure sufficient data points
-- Check available system memory
-- Verify all dependencies installed
-
-For additional support, check log files in the reports/ directory.
+- reports/ - Analysis reports and logs
+- predictions/ - Price forecasts and predictions 
