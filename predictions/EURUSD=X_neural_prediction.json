@@ -1,0 +1,9 @@
+{
+  "pair": "EURUSD=X",
+  "current_price": 1.1337097883224487,
+  "predicted_price": 1.1312580108642578,
+  "change_percent": -0.21626147039083213,
+  "model": "Dense_NN",
+  "prediction_date": "2025-05-29T18:34:50.167865",
+  "timestamp": "2025-05-29T18:34:50.167875"
+}

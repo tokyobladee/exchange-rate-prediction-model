@@ -1,0 +1,22 @@
+{
+  "EURUSD=X": {
+    "clean_name": "EURUSD",
+    "description": "Euro to US Dollar",
+    "period": "2y",
+    "data_shape": [
+      771,
+      20
+    ],
+    "date_range": {
+      "start": "2022-06-10T00:00:00+01:00",
+      "end": "2025-05-28T00:00:00+01:00"
+    },
+    "last_updated": "2025-05-29T18:17:02.843454",
+    "status": "active",
+    "last_trained": "2025-05-29T18:17:10.648832",
+    "models_available": {
+      "traditional": true,
+      "neural": true
+    }
+  }
+}

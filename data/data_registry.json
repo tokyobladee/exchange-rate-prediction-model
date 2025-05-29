@@ -1,0 +1,13 @@
+{
+  "EURUSD=X": {
+    "backups": [
+      {
+        "timestamp": "20250528_032946",
+        "backup_type": "manual",
+        "backup_dir": "backups/EURUSD/20250528_032946_manual",
+        "files_backed_up": [],
+        "created_at": "2025-05-28T03:29:46.502943"
+      }
+    ]
+  }
+}
