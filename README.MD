@@ -7,7 +7,7 @@ install.bat
 
 ### Linux/Mac
 ```bash
-./install.sh
+install.sh
 ```
 
 ## Running the System
