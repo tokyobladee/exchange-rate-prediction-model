@@ -8,10 +8,8 @@ Requirements:
 - 4GB RAM minimum
 
 Install dependencies:
-   pip install -r requirements.txt
-
-Verify installation:
-   python -c "import pandas, numpy, sklearn, tensorflow, torch"
+   Windows: install.bat
+   Linux/Mac: install.sh
 
 LAUNCH
 ======
